@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+
+
+
 void fill_numb(int array[],int n){
     for(int i=0;i<n;i++){
         array[i]=-10+rand()%21;
