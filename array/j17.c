@@ -1,4 +1,4 @@
-//1-manfiy elementigacha bolgan elementlar yig'indisi
+//oxirgi manfiy sondan uyog'idagi sonlar kopaytmasini topish
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -13,14 +13,15 @@ void output(int array[],int n){
     }
     puts(" ");
 }
-void summ(int array[],int n){
-    int summ=0;
-    for(int i=0;i<n;i++){
+void kopaytir(int array[],int n){
+    int s=1;
+    for(int i=n-1;i>=0;i--){
         if(array[i]>=0){
-            summ+=array[i];
+            printf("%d ",array[i]);
+            s*=array[i];
         }else{break;}
     }
-    printf("%d",summ);
+    printf("\n%d",s);
 }
 int main(){
     int n;
@@ -29,7 +30,7 @@ int main(){
     srand(time(0));
     fill_numb(numb,n);
     output(numb,n);
-    summ(numb,n);
+    kopaytir(numb,n);
 
 
     return 0;
