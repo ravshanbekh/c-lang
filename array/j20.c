@@ -6,6 +6,7 @@ void palindrom(int nums[],int n){
         if(nums[i]!=nums[n-1-i]){
             printf("palindrom son emas");
             c++;
+            break;
         }
     }
     if(c==0){
