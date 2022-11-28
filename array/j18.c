@@ -28,9 +28,10 @@ void summa(int array[],int n){
             }
     }
     for(int i=v+1;i<u;i++){
+        printf("%d ",array[i]);
         s+=array[i];
     }
-    printf("%d",s);
+    printf("\n%d",s);
 }
 int main(){
     int n;

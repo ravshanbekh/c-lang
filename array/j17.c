@@ -14,12 +14,15 @@ void output(int array[],int n){
     puts(" ");
 }
 void kopaytir(int array[],int n){
-    int s=1;
+    int s=1,k=0;
     for(int i=n-1;i>=0;i--){
         if(array[i]>=0){
             printf("%d ",array[i]);
             s*=array[i];
         }else{break;}
+        if(array[n-1]<=0){
+            s=0;
+        }
     }
     printf("\n%d",s);
 }
