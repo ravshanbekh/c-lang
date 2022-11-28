@@ -25,7 +25,7 @@ void teng_bolaklar(int nums[],int n){
             }
             printf("===");
             for(int j=c;j<n;j++){
-                printf("%d ",nums[j]);
+                printf(" %d",nums[j]);
             }
             break;
         }else{
